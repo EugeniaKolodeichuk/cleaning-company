@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Regular.woff2'),
+        url('../fonts/TTNormsPro-Regular.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Italic.woff2'),
+        url('../fonts/TTNormsPro-Italic.woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Medium.woff2'),
+        url('../fonts/TTNormsPro-Medium.woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-MediumItalic.woff2'),
+        url('../fonts/TTNormsPro-MediumItalic.woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-Bold.woff2'),
+        url('../fonts/TTNormsPro-Bold.woff');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-ExtraBold.woff2'),
+        url('../fonts/TTNormsPro-ExtraBold.woff');
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../fonts/TTNormsPro-ExtraBoldItalic.woff2'),
+        url('../fonts/TTNormsPro-ExtraBoldItalic.woff');
+    font-weight: 800;
+    font-display: swap;
+    font-style: italic;
+}
+
+:root {
+    --main-text-color: #202020;
+    --light-text-color: #FFFFFF;
+    --first-accent-text-color: #3BB765;
+    --second-accent-text-color: #1264E3;
+    --dark-note-text-color: #7586A2;
+    --light-note-text-color: #7587A3;
+    --dark-items-color: #316AC3;
+    --light-items-color: #ECF4FF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1590px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family: 'TT Norms Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.44;
+    color: var(--main-text-color)
+}
+
+.link {
+    text-decoration: none;
+    color: inherit
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--light-text-color);
+    background: linear-gradient(180deg, #92B0F7 -5.71%, #005CEC 20.17%, #005CEC 20.17%, #005CEC 105.71%);
+    box-shadow: 0px 3px 0px #0057DE,
+        inset 0px 0px 10px rgba(254, 254, 254, 0.2);
+    border-radius: 50px;
+    border: none;
+}
+
+
+.section-title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.33;
+    color: var(--main-text-color);
+}
+
+/*header*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+
+}
+
+.service {
+    margin-right: 40px;
+    margin-left: 1px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 138px;
+    height: 54px;
+    padding: 18px 30px 19px 31.25px;
+    margin-right: 166px;
+    background: none;
+    border: 1px solid #ECF4FF;
+    box-sizing: border-box;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 17.5px;
+    height: 12.5px;
+    margin-right: 11.25px;
+    fill: var(--second-accent-text-color);
+    color: var(--second-accent-text-color);
+}
+
+.menu-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+}
+
+.menu-accent {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: right;
+    color: var(--first-accent-text-color);
+}
+
+.menu-phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: right;
+    color: var(--main-text-color);
+}
+
+.menu-info {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.button-light {
+    background: none;
+    cursor: pointer;
+    border: 1px solid var(--second-accent-text-color);
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 247px;
+    height: 54px;
+}
+
+.underline {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--second-accent-text-color);
+    border-bottom: 1px dashed var(--second-accent-text-color);
+}
+
+/*hero*/
+.hero {
+    margin-top: 75px;
+    margin-left: 90px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.19;
+    color: var(--main-text-color);
+}
+
+.omg-image {
+    margin-left: 10px;
+}
+
+.title-bold {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.55;
+    color: var(--main-text-color);
+}
+
+.title-first-accent {
+    color: var(--first-accent-text-color);
+}
+
+.hero-title {
+    width: 719px;
+    height: 204px;
+}
+
+.price {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.hero-calculate {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.64;
+    color: var(--main-text-color);
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 342px;
+    height: 70px;
+    margin-right: 28px;
+}
+
+.button-icon-left {
+    margin-right: 10px;
+}
+
+.button-icon-right {
+    margin-left: 10px;
+}
+
+.make-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.mop {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 14px;
+}
+
+.plus {
+    font-weight: 275;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--light-note-text-color);
+}
+
+.hero-accent-text {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #1151B5;
+    text-transform: uppercase;
+}
+
+.hero-noaccent-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+/*benefits*/
+.benefits {
+    margin-top: 253px;
+}

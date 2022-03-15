@@ -93,6 +93,11 @@ p {
     margin-bottom: 0;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -145,6 +150,7 @@ body {
     font-size: 36px;
     line-height: 1.33;
     color: var(--main-text-color);
+
 }
 
 /*header*/
@@ -237,7 +243,7 @@ body {
 /*hero*/
 .hero {
     margin-top: 75px;
-    margin-left: 90px;
+    /*  margin-left: 90px; */
 }
 
 .hero-text {
@@ -342,4 +348,106 @@ body {
 /*benefits*/
 .benefits {
     margin-top: 253px;
+    /* margin-left: 90px; */
+}
+
+.benefits-photo {
+    border-radius: 50px;
+}
+
+.gallery-item:nth-child(odd) .benefits-photo {
+    background-color: var(--dark-items-color);
+    color: #FFFFFF;
+}
+
+.gallery-item:nth-child(even) .benefits-photo {
+    background-color: var(--light-items-color);
+    color: #000000;
+}
+
+.benefits-thumb {
+    position: relative;
+}
+
+.benefits-thumb-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 229px;
+    height: 100%;
+    color: inherit;
+    /*   background-color: rgba(47, 48, 58, 0.8); */
+}
+
+.benefits-thumb-text {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+}
+
+.benefits-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.benefits-main {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.44;
+    color: inherit;
+}
+
+.benefits-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: inherit;
+}
+
+.gallery-item:nth-child(odd) .benefits-thumb-info {
+    color: var(--light-text-color);
+}
+
+.gallery-item:nth-child(even) .benefits-thumb-info {
+    color: var(--main-text-color);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.grid-item {
+    flex-basis: calc((100% - 20px * var(--grid-item)) / var(--grid-item));
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    --grid-item: 3;
+}
+
+.benefits-list {
+    width: 1207px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*cleaning*/
+.cleaning {
+    margin-top: 130px;
 }

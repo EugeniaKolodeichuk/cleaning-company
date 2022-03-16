@@ -134,14 +134,17 @@ body {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    background-color: var(--light-text-color);
+    border: none;
     cursor: pointer;
-    color: var(--light-text-color);
+    padding: 0;
+    /* color: var(--light-text-color);
     background: linear-gradient(180deg, #92B0F7 -5.71%, #005CEC 20.17%, #005CEC 20.17%, #005CEC 105.71%);
     box-shadow: 0px 3px 0px #0057DE,
         inset 0px 0px 10px rgba(254, 254, 254, 0.2);
     border-radius: 50px;
-    border: none;
+    border: none; */
 }
 
 
@@ -298,6 +301,13 @@ body {
     width: 342px;
     height: 70px;
     margin-right: 28px;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    background: linear-gradient(180deg, #92B0F7 -5.71%, #005CEC 20.17%, #005CEC 20.17%, #005CEC 105.71%);
+    box-shadow: 0px 3px 0px #0057DE,
+        inset 0px 0px 10px rgba(254, 254, 254, 0.2);
+    border-radius: 50px;
+    border: none;
 }
 
 .button-icon-left {
@@ -450,4 +460,109 @@ body {
 /*cleaning*/
 .cleaning {
     margin-top: 130px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cleaning-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cleaning-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cleaning-button {
+    width: 294px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: var(--light-text-color);
+    color: var(--second-accent-text-color);
+    border: 1px solid var(--second-accent-text-color);
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.cleaning-button:hover,
+.cleaning-button:focus {
+    color: var(--light-text-color);
+    background: linear-gradient(180deg, #92B0F7 -5.71%, #005CEC 20.17%, #005CEC 20.17%, #005CEC 105.71%);
+    box-shadow: 0px 3px 0px #0057DE,
+        inset 0px 0px 10px rgba(254, 254, 254, 0.2);
+    border-radius: 50px;
+}
+
+.cleaning-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.cleaning-all-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 284px;
+    height: 70px;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.62;
+    color: var(--main-text-color);
+    position: absolute;
+    top: 501px;
+    right: 490px;
+}
+
+.cleaning-thumb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cleaning-photo {
+    width: 1206px;
+
+}
+
+.back {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
+    background: none;
+    position: absolute;
+    top: 261px;
+    left: 143px;
+    /* width: 229px;
+    height: 100%;
+    color: inherit; */
+    /*   background-color: rgba(47, 48, 58, 0.8); */
+}
+
+.forward {
+    background: none;
+    position: absolute;
+    top: 261px;
+    right: 143px;
+}
+
+.button-icon-cleaning {
+    margin-right: 10px;
+}
+
+/*main-services*/
+.main-services {
+    margin-top: 106px;
 }
